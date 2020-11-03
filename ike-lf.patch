@@ -1,0 +1,11 @@
+diff -Naur ike/source/iked/conf.parse.yy ike_20.04/source/iked/conf.parse.yy
+--- ike/source/iked/conf.parse.yy 2013-04-03 09:10:43.000000000 +0200
++++ ike_20.04/source/iked/conf.parse.yy 2020-05-26 23:24:15.728277611 +0200
+@@ -41,7 +41,7 @@
+ 
+ %skeleton "lalr1.cc"
+ %defines
+-%define "parser_class_name" "conf_parser"
++%define api.parser.class {conf_parser}
+ 
+ %{
